@@ -12,6 +12,7 @@ int main(
 	PWSTR arguments,
 	int commandShow) 
 {
+
 	//Create GUI
 
 	GUI::CreateHWindow("ImGui Example App", "ExampleClass");
@@ -29,7 +30,7 @@ int main(
 
 	//DESTROY
 
-	GUI::DestroyImGUI();
+	GUI::DestroyImGUI();\
 	GUI::DestroyDevice();
 	GUI::DestroyHWindow();
 

@@ -13,6 +13,8 @@ namespace GUI
 	inline HWND window = nullptr;
 	inline WNDCLASSEXA windowClass = { };
 
+	inline HWND console = GetConsoleWindow();
+
 	// Points for window movement
 	inline POINTS position = {  };
 

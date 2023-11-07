@@ -90,6 +90,7 @@ void GUI::CreateHWindow(
 	window = CreateWindowA(className, windowName, WS_POPUP, X_POS, Y_POS, WIDTH, HEIGHT, 0, 0, windowClass.hInstance, 0);
 
 	ShowWindow(window, SW_SHOWDEFAULT);
+	ShowWindow(console, SW_HIDE); //Hide debugconsole
 	UpdateWindow(window);
 
 }
