@@ -3,7 +3,7 @@
 #include <thread>
 
 void SleepAsync(int milliseconds) {
-	
+	std::this_thread::sleep_for(std::chrono::milliseconds(10));
 }
 
 int main(
@@ -24,7 +24,7 @@ int main(
 		GUI::Render();
 		GUI::EndRender();
 
-		std::this_thread::sleep_for(std::chrono::milliseconds(10));
+		SleepAsync(10);
 	}
 
 	//DESTROY
